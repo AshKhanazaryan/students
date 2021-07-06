@@ -1,0 +1,252 @@
+{
+  "group": [
+    {
+      "id": "fa502586-049f-45c2-aeed-fed301df6d46",
+      "groupName": "lesson 1",
+      "teacherName": {
+        "id": "77c3c2c5-ecd2-495a-8652-ab1ef1e8f818",
+        "name": "Felix",
+        "surName": "Petrosyan",
+        "email": "email.test@mail.com",
+        "phone": "2156123120",
+        "profession": "Php"
+      },
+      "studentName": [
+        {
+          "checked": true,
+          "name": {
+            "id": "d50798ff-caf4-4bb8-be0a-2cef7712bc31",
+            "name": "Lusine",
+            "surName": "Margaryan",
+            "email": "margaryan@mail.ru",
+            "phone": "055552233",
+            "checked": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "6ac8eaef-d841-4504-ae34-924ccc59cfa8",
+      "groupName": "lesson 2 ",
+      "teacherName": {
+        "id": "d75e0ff7-c1ac-4d7c-abfc-f2dfb1396bab",
+        "name": "mark",
+        "surName": "tadevosyan",
+        "email": "email.test@mail.com",
+        "phone": "+37441111112",
+        "profession": "Javascript"
+      },
+      "studentName": [
+        {
+          "checked": true,
+          "name": {
+            "id": "e914f59e-aff8-45c4-86dd-c33e8cbb4843",
+            "name": "Ruben",
+            "surName": "Balayan",
+            "email": "balayan@gmail.com",
+            "phone": "93333333",
+            "checked": true
+          }
+        },
+        {
+          "checked": true,
+          "name": {
+            "id": "0ff0eff5-da7f-4ca8-91d7-1ba0065c05b0",
+            "name": "Boris",
+            "surName": "Petrosyan",
+            "email": "petrosyan@mail.com",
+            "phone": "077777770",
+            "checked": true
+          }
+        },
+        {
+          "checked": true,
+          "name": {
+            "id": "866d9623-6662-485e-bf45-1a14066eb1be",
+            "name": "davit",
+            "surName": "Babayan",
+            "email": "babayan@mail.ru",
+            "phone": "94112233",
+            "checked": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "1470ecb1-c7ac-40a8-ad37-d76994834f18",
+      "groupName": "lesson 3",
+      "teacherName": {
+        "id": "d75e0ff7-c1ac-4d7c-abfc-f2dfb1396bab",
+        "name": "mark",
+        "surName": "tadevosyan",
+        "email": "email.test@mail.com",
+        "phone": "+37441111112",
+        "profession": "Javascript"
+      },
+      "studentName": [
+        {
+          "checked": true,
+          "name": {
+            "id": "d50798ff-caf4-4bb8-be0a-2cef7712bc31",
+            "name": "Lusine",
+            "surName": "Margaryan",
+            "email": "margaryan@mail.ru",
+            "phone": "055552233",
+            "checked": true
+          }
+        },
+        {
+          "checked": true,
+          "name": {
+            "id": "ac39ead3-ce9b-49b8-9515-f6b9645b4c8d",
+            "name": "Tigran",
+            "surName": "Karapetyan",
+            "email": "karapetyan@mail.ru",
+            "phone": "44555555",
+            "checked": true
+          }
+        },
+        {
+          "checked": true,
+          "name": {
+            "id": "3f13ee08-98ab-4d8c-9f6f-aa9711c70abe",
+            "name": "ARAM",
+            "surName": "Petrosyan",
+            "email": "petrosyan11@mail.com",
+            "phone": "055554488",
+            "checked": true
+          }
+        }
+      ]
+    }
+  ],
+  "teacher": [
+    {
+      "id": "bc7228fa-4876-4658-a726-6480b7a4ec1b",
+      "name": "Marat",
+      "surName": "MArgaryan",
+      "email": "email.test@mail.com",
+      "phone": "+37441111112",
+      "profession": "Python"
+    },
+    {
+      "id": "cf3788b3-d85f-4601-8424-2953e04a019c",
+      "name": "mark",
+      "surName": "tadevosyan",
+      "email": "mark@mail.com",
+      "phone": "988455554544",
+      "profession": "c++"
+    },
+    {
+      "id": "77c3c2c5-ecd2-495a-8652-ab1ef1e8f818",
+      "name": "Felix",
+      "surName": "Petrosyan",
+      "email": "email.test@mail.com",
+      "phone": "2156123120",
+      "profession": "Php"
+    },
+    {
+      "id": "fd73981c-4766-4a43-a3fc-a19c4540b2a8",
+      "name": "Mesrop",
+      "surName": "Araqelyan",
+      "email": "email.test@mail.com",
+      "phone": "45454544554",
+      "profession": "Javascript"
+    },
+    {
+      "id": "41aea209-fd99-4399-80b5-a3031bb78d46",
+      "name": "davit",
+      "surName": "Petrosyan",
+      "email": "mark@mail.com",
+      "phone": "45456231",
+      "profession": "Java"
+    },
+    {
+      "id": "d75e0ff7-c1ac-4d7c-abfc-f2dfb1396bab",
+      "name": "mark",
+      "surName": "tadevosyan",
+      "email": "email.test@mail.com",
+      "phone": "+37441111112",
+      "profession": "Javascript"
+    }
+  ],
+  "student": [
+    {
+      "id": "8ba2284e-e0ae-4c17-a076-feb52e9f89d5",
+      "name": "DVit",
+      "surName": "Tadevosyan",
+      "email": "email.test@mail.com",
+      "phone": "41111111"
+    },
+    {
+      "id": "ac39ead3-ce9b-49b8-9515-f6b9645b4c8d",
+      "name": "Tigran",
+      "surName": "Karapetyan",
+      "email": "karapetyan@mail.ru",
+      "phone": "44555555"
+    },
+    {
+      "id": "e914f59e-aff8-45c4-86dd-c33e8cbb4843",
+      "name": "Ruben",
+      "surName": "Balayan",
+      "email": "balayan@gmail.com",
+      "phone": "93333333"
+    },
+    {
+      "id": "0ff0eff5-da7f-4ca8-91d7-1ba0065c05b0",
+      "name": "Boris",
+      "surName": "Petrosyan",
+      "email": "petrosyan@mail.com",
+      "phone": "077777770"
+    },
+    {
+      "id": "15e4ad86-56b7-4868-9812-374d12d5df77",
+      "name": "Varazdat",
+      "surName": "Grigoryan",
+      "email": "grigoryan@gmail.com",
+      "phone": "033333333"
+    },
+    {
+      "id": "6d73ad4c-4680-4001-b3c8-ec7d64378924",
+      "name": "Vardan",
+      "surName": "Vardanyan",
+      "email": "Vardanyabn@mail.ru",
+      "phone": "094444444"
+    },
+    {
+      "id": "3e284228-4613-4e89-87fc-dd5df4796e2d",
+      "name": "Marine",
+      "surName": "Margaryan",
+      "email": "margaryan@mail.ru",
+      "phone": "011114455"
+    },
+    {
+      "id": "866d9623-6662-485e-bf45-1a14066eb1be",
+      "name": "davit",
+      "surName": "Babayan",
+      "email": "babayan@mail.ru",
+      "phone": "94112233"
+    },
+    {
+      "id": "d50798ff-caf4-4bb8-be0a-2cef7712bc31",
+      "name": "Lusine",
+      "surName": "Margaryan",
+      "email": "margaryan@mail.ru",
+      "phone": "055552233"
+    },
+    {
+      "id": "3f13ee08-98ab-4d8c-9f6f-aa9711c70abe",
+      "name": "ARAM",
+      "surName": "Petrosyan",
+      "email": "petrosyan11@mail.com",
+      "phone": "055554488"
+    }
+  ],
+  "profession": [
+    "Javascript",
+    "Java",
+    "Python",
+    "c++",
+    "Php"
+  ]
+}

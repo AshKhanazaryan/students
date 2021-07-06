@@ -1,0 +1,8 @@
+<ul class="list-group text-center">
+  <ng-container *ngIf="listName[0].length > 1">
+    <li *ngFor="let list of listName[0]" class="list-group-item disabled">{{list['name'].name}}</li>
+  </ng-container>
+  <ng-container *ngIf="listName.length <= 1">
+    <li *ngFor="let list of listName" class="list-group-item disabled">{{list['name']}}</li>
+  </ng-container>
+</ul>

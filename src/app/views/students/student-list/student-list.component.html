@@ -1,0 +1,35 @@
+<div class="main">
+  <table class="table">
+    <thead>
+    <tr class="text-primary">
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">SurName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary" [routerLink]="['/create-student']">Create Student</button>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students  let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{student.name}}</td>
+      <td>{{student.surName}}</td>
+      <td>{{student.email}}</td>
+      <td>{{student.phone}}</td>
+      <td class="d-flex justify-content-end">
+
+        <span class="mx-2 text-success" (click)="goToEdit(student.id)">
+          <fa-icon class="cursor" [icon]="faEdit"></fa-icon>
+        </span>
+        <span class="mx-2 text-danger" (click)="delete(student.id)">
+         <fa-icon class="cursor"  [icon]="faTrash"></fa-icon>
+        </span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

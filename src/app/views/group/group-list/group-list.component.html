@@ -1,0 +1,37 @@
+<div class="main">
+  <table class="table">
+    <thead>
+    <tr class="text-primary">
+      <th scope="col">#</th>
+      <th scope="col">Group Name</th>
+      <th scope="col">Teachers</th>
+      <th scope="col">Students</th>
+      <th class="d-flex justify-content-end">
+        <button type="text" class="btn btn-primary" [routerLink]="['/create-group']">Create Group</button>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let group of allGroups; let i = index">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{group.groupName}}</td>
+      <td>{{group.teacherName.name}}<span [routerLink]="['/single-group']" class="mx-2 text-primary" (click)="showData(group.teacherName.id, 'teacher')">
+          <fa-icon class="cursor" [icon]="faEye"></fa-icon>
+        </span>
+      </td>
+      <td>{{group.studentName[0].name.name}}<span [routerLink]="['/single-group']" class="mx-2 text-primary" (click)="showData(group.studentName.id, 'student')">
+          <fa-icon class="cursor" [icon]="faEye"></fa-icon>
+        </span>
+      </td>
+      <td class="d-flex justify-content-end">
+        <span class="mx-2 text-success" (click)="goToEdit(group.id)">
+          <fa-icon class="cursor" [icon]="faEdit"></fa-icon>
+        </span>
+        <span class="mx-2 text-danger" (click)="delete(group.id)">
+         <fa-icon class="cursor" [icon]="faTrash"></fa-icon>
+        </span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

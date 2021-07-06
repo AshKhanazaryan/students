@@ -1,0 +1,53 @@
+<div>
+  <form [formGroup]="studentForm">
+    <div class="form-row">
+      <div class="form-group offset-lg-3 col-lg-6 mb-3">
+        <label for="inputEmail4">Name</label>
+        <input type="text" class="form-control"
+               id="inputEmail4" placeholder="Name"
+               [ngClass]="{ 'is-invalid': formStudent.name.touched && formStudent.name.errors }"
+               formControlName="name">
+        <div *ngIf="formStudent.name.touched && formStudent.name.errors" class="invalid-feedback">
+          <div *ngIf="formStudent.name.errors.required">Name is Required</div>
+        </div>
+      </div>
+      <div class="form-group offset-lg-3 col-lg-6 mb-3">
+        <label for="inputSurName">Surname</label>
+        <input type="text" class="form-control"
+               id="inputSurName" placeholder="Surname"
+               [ngClass]="{ 'is-invalid': formStudent.surName.touched && formStudent.surName.errors }"
+               formControlName="surName">
+        <div *ngIf="formStudent.surName.touched && formStudent.surName.errors" class="invalid-feedback">
+          <div *ngIf="formStudent.surName.errors.required">SurName is Required</div>
+        </div>
+      </div>
+      <div class="form-group offset-lg-3 col-lg-6 mb-3">
+        <label for="inputAddress">Email</label>
+        <input type="text" class="form-control"
+               id="inputAddress" placeholder="email"
+               [ngClass]="{ 'is-invalid': formStudent.email.touched && formStudent.email.errors }"
+               formControlName="email">
+        <div *ngIf="formStudent.email.touched && formStudent.email.errors" class="invalid-feedback">
+          <div *ngIf="formStudent.email.errors.required">Email is Required</div>
+          <div *ngIf="formStudent.email.errors.email">Email must be a valid email address</div>
+        </div>
+      </div>
+      <div class="form-group offset-lg-3 col-lg-6 mb-3">
+        <label for="inputAddress2">Phone</label>
+        <input type="text" class="form-control"
+               (keypress)="keyPress($event)"
+               [ngClass]="{ 'is-invalid': formStudent.phone.touched && formStudent.phone.errors }"
+               id="inputAddress2" placeholder="Number"
+               formControlName="phone">
+        <div *ngIf="formStudent.phone.touched && formStudent.phone.errors" class="invalid-feedback">
+          <div *ngIf="formStudent.phone.errors.required">Phone is Required</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group offset-lg-3 col-lg-6 mb-3 d-flex justify-content-end">
+      <button type="button" class="btn btn-secondary me-3" [routerLink]="['/student-list']">Cancel</button>
+      <button type="button" class="btn btn-success" (click)="save()">Save</button>
+    </div>
+  </form>
+</div>
